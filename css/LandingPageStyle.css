@@ -1,0 +1,85 @@
+
+#page{
+	height: 30%;
+	background-color:;
+	padding: 1% 1%;
+	z-index: 1;
+}
+.logo{
+	position: relative;
+	top: 0%;
+	left: 0%;
+}
+.NameMenu{
+	position:relative;
+ left:50%;
+ right:50%;
+}
+.MainMenu{
+	font-size: 25px;
+	color: black;
+	position:absolute;
+	top:0%;
+	right:1%;
+}
+#MainMenu > li{
+	float: left;
+	list-style-type:none ;
+
+}
+#MainMenu li:hover ul{
+	display:block;
+}
+#MainSite{
+	font-style: italic;
+	position: relative;
+	
+	font-size: 20px;
+}
+.section1{
+	border-radius: 1;
+	border-width: 10px;
+	border-color: black;
+	
+}
+@counter-style circled-alpha{
+	system:fixed;
+	symbols:🌵 🌏 🎋 🌞 🌸 🐉 🐫 🦎 🐍 🏔 🗻 🏞;
+suffix:" ";
+}
+
+.section1{
+	font-size:14px;
+	border-width: 1px;
+	border-color: black;
+}
+.animated-element {
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: blue;
+	position: absolute;
+	top: 0;
+	animation: move-down 5s infinite ;
+  }
+  
+  @keyframes move-down {
+	0% { top: 40%; }
+	100% { top: 70%;}
+  }
+  footer {
+	
+	background-color: #f8f8f8;
+	padding: 20px;
+	text-align: center;
+ }
+ 
+ .container {
+	max-width: 960px;
+	margin: 0 auto;
+ }
+ 
+ p {
+	font-size: 16px;
+	color: #333;
+ }

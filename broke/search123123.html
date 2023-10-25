@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="css/LandingPageStyle.css">
+ <link rel="stylesheet" href="css/Menu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результаты поиска маршрутов</title>
+  <style>
+    /* Стили для макета страницы */
+    /* ... */
+
+    /* Стили для таблицы с результатами */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {background-color: #f2f2f2;}
+  </style>
+</head>
+<body>
+    <div id="MainSite">
+    <div id="page"><header>
+		<div class="Logo"><img src="img/logoza.ru.png" height="100%" width="15%" >
+			</div>	
+</header>
+    </div>
+    
+  <h2>Результаты поиска маршрутов</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Регион</th>
+        <th>Название маршрута</th>
+        <th>Сложность маршрута</th>
+        <th>Предполагаемые даты похода</th>
+        <th>Количество интересных зон</th>
+        <th>Выбор маршрута</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Здесь вставляем данные с результатами поиска -->
+      <tr>
+        <td>Регион 1</td>
+        <td>Маршрут 1</td>
+        <td>Сложность 1</td>
+        <td>Даты 1</td>
+        <td>Количество зон 1</td>
+        <td><button onclick="selectRoute(1)">Выбрать</button></td>
+      </tr>
+      <!-- ... -->
+      <tr>
+        <td>Регион 1</td>
+        <td>Маршрут 1</td>
+        <td>Сложность 1</td>
+        <td>Даты 1</td>
+        <td>Количество зон 1</td>
+        <td><button onclick="selectRoute(1)">Выбрать</button></td>
+      </tr>
+      <tr>
+        <td>Регион 1</td>
+        <td>Маршрут 1</td>
+        <td>Сложность 1</td>
+        <td>Даты 1</td>
+        <td>Количество зон 1</td>
+        <td><button onclick="selectRoute(1)">Выбрать</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="выбор_зон.html">Перейти к выбору конкретных зон для посещения</a>
+  <footer>
+	<div class="container">
+	   <p style="color: red;">Телефон: 8 (800) 555-33-10</p>
+	</div>
+</div>
+ </footer>
+  <script>
+    // Функция для выбора маршрута
+    function selectRoute(routeId) {
+      // Здесь можно добавить логику для выбора маршрута
+      // Например, можно отправить AJAX запрос на сервер для сохранения выбранного маршрута
+      console.log("Выбран маршрут с id: " + routeId);
+    }
+  </script>
+
+</body>
+</html>

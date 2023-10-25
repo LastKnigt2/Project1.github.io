@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<script>
+			function scrollToSection(sectionId) {
+			var section = document.getElementById(sectionId);
+			section.scrollIntoView({behavior: "smooth"});
+		  }
+		</script>	
+		<link rel="stylesheet" href="css/LandingPageStyle.css">
+<link rel="stylesheet" href="css/Menu.css">
+<link href="/wa-content/font/ruble/arial/fontface.css" rel="stylesheet">
+</head>
+<!-- 
+<body>
+	
+
+
+<div id="MainSite">
+
+	
+<div id="section3">
+	<section><p></p><h2>
+	Форма поиска
+</h2><p></p>
+	<form>
+		<label for="region">Выбор региона:</label>
+		<select id="region" name="region">
+		  <option value="region1" id="region1">Республика Мордовия</option>
+		  <option value="region2" id="region2">Республика Башкортостан</option>
+		  <option value="region3" id="region3">Красноярский край</option>
+		</select>
+		<label for="dates">Предполагаемые даты похода:</label>
+		<input type="date" id="dates" name="dates">
+		<label for="participants">Количество участников:</label>
+		<input type="number" id="participants" name="participants">
+	
+		<label for="level">Уровень подготовки участников:</label>
+		<select id="level" name="level">
+		  <option value="beginner">Начинающий</option>
+		  <option value="intermediate">Средний</option>
+		  <option value="advanced">Продвинутый</option>
+		</select>
+
+		<button type="submit"><a href="javascript:scrollToSection('regionID')">Поиск</a></button>
+	  </form>
+	  
+</section>
+</div>
+	
+		</div>
+	
+	
+	</div>
+</body>
+-->	
+<html>
+<head>
+  <title>Результаты поиска маршрутов</title>
+</head>
+<body>
+	<div id="page"><header>
+		<div class="Logo"><img src="img/logoza.ru.png" height="100%" width="15%" >
+			</div>	
+</header>
+  <h2>Результаты поиска маршрутов</h2>
+
+  <table>
+	
+    <tr>
+      <th>Регион</th>
+      <th>Название маршрута</th>
+      <th>Сложность маршрута</th>
+      <th>Предполагаемые даты похода</th>
+      <th>Количество интересных зон</th>
+      <th>Действия</th>
+    </tr>
+	<!--
+    <tr>
+      <td>Регион 1</td>
+      <td>Маршрут 1</td>
+      <td>Сложность 1</td>
+      <td>Даты 1</td>
+      <td>Количество зон 1</td>
+      <td>
+        <button onclick="chooseRoute(1)">Выбрать</button>
+      </td>
+	  -->
+    </tr>
+    <tr>
+      <td>Регион 2</td>
+      <td>Маршрут 2</td>
+      <td>Сложность 2</td>
+      <td>Даты 2</td>
+      <td>Количество зон 2</td>
+      <td>
+        <button onclick="chooseRoute(2)">Выбрать</button>
+      </td>
+    </tr>
+    <!-- Здесь добавляются другие варианты маршрутов -->
+  </table>
+
+  <script>
+    function chooseRoute(routeId) {
+      // Выполняйте действия при выборе конкретного маршрута,
+      // например, перенаправление на страницу выбора зон для посещения.
+      window.location.href = "выбор_зон.php?route=" + routeId;
+    }
+  </script>
+  <footer>
+	<div class="container">
+	   <p style="color: red;">Телефон: 8 (800) 555-33-10</p>
+	</div>
+ </footer>
+</body>
+</html>
